@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $("div").on("click", function(){
+                $("div").css("color", "pink");
+            });
+        })
+    </script>
+    <style type="text/css">
+        @media(max-width:520px) { /*화면 크기가 최대 520인 경우*/
+        body {background: rgb(237, 202, 202);}
+        }
+        @media(min-width:521px) and (max-width:799px) { /*화면 크기가 521-799까지*/
+            body {background: rgb(194, 236, 194);}
+        }
+        @media(min-width:800px) { /*화면 크기가 최소 800인 경우*/
+            body {background: rgb(164, 164, 252);}
+        }
+    </style>
+</head>
+<body>
+    <div>안녕</div>
+</body>
+</html>
