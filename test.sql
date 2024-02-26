@@ -34,4 +34,5 @@ WHERE
 drop table test;
 
 select * from test;
+123
 
